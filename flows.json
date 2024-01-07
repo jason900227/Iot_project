@@ -1,0 +1,1456 @@
+[
+    {
+        "id": "91aab71e913ebd26",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0c863148dc01f73c",
+        "type": "xN_CSE",
+        "platform": "mn-cse",
+        "URLBase": "http://127.0.0.1:8282/~/mn-cse/mn-name",
+        "user": "admin",
+        "password": "admin"
+    },
+    {
+        "id": "2a8fa689d4502e17",
+        "type": "AE",
+        "appId": "app_inventor_1"
+    },
+    {
+        "id": "0fd8f5462ecc5b46",
+        "type": "AE",
+        "appId": "app_inventor_2"
+    },
+    {
+        "id": "95f8d6dec9af1029",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "a80a7bb9b27959d4"
+            ]
+        ]
+    },
+    {
+        "id": "a80a7bb9b27959d4",
+        "type": "Application",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "2a8fa689d4502e17",
+        "pointOfAccess": "",
+        "obixAnnounce": false,
+        "width": 0,
+        "options": [
+            {
+                "label": "traffic_flow",
+                "value": "1"
+            }
+        ],
+        "cntInstance": "",
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "9c7948409a010fcb"
+            ]
+        ]
+    },
+    {
+        "id": "9c7948409a010fcb",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ac7aa3087f3902fa",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "f7b2f199fa684680"
+            ]
+        ]
+    },
+    {
+        "id": "59699900317dc410",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f7b2f199fa684680",
+        "type": "Container",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "2a8fa689d4502e17",
+        "viewtype": "DATA",
+        "viewunid1": "",
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "59699900317dc410"
+            ]
+        ]
+    },
+    {
+        "id": "766e707e630c206f",
+        "type": "ContentInstance",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "2a8fa689d4502e17",
+        "container": "DATA",
+        "width": 0,
+        "options": [
+            {
+                "type": "str",
+                "label": "traffic_accident",
+                "value": "-1"
+            },
+            {
+                "type": "str",
+                "label": "traffic_flow",
+                "value": "-1"
+            }
+        ],
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "2ee4e96ed26a62f9"
+            ]
+        ]
+    },
+    {
+        "id": "2ee4e96ed26a62f9",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "43a4fed7d6665611",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 340,
+        "wires": [
+            [
+                "766e707e630c206f"
+            ]
+        ]
+    },
+    {
+        "id": "7f8d9f6475069c10",
+        "type": "http in",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "url": "/sensorData_1",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 400,
+        "wires": [
+            [
+                "d33763c27e6f218f"
+            ]
+        ]
+    },
+    {
+        "id": "d33763c27e6f218f",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 1",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n\t<cnf>message</cnf>\\\n\t<con>\\\n\t  &lt;obj&gt;\\\n\t\t&lt;str name=&quot;traffic_accident&quot; val=&quot;'+ msg.payload.traffic_accident + '&quot;/&gt;\\\n\t\t&lt;str name=&quot;traffic_flow&quot; val=&quot;'+ msg.payload.traffic_flow + '&quot;/&gt;\\\n\t  &lt;/obj&gt;\\\n\t</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 400,
+        "wires": [
+            [
+                "eefd30b52827ed86"
+            ]
+        ]
+    },
+    {
+        "id": "eefd30b52827ed86",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_1/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "1ce412a0d5d72c32",
+                "9e1df6a070995ed8"
+            ]
+        ]
+    },
+    {
+        "id": "1ce412a0d5d72c32",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9e1df6a070995ed8",
+        "type": "http response",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a5b1bd2a98824da3",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "delete DATA",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_1/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 40,
+        "wires": [
+            [
+                "dd5fe53ac71ed7d0"
+            ]
+        ]
+    },
+    {
+        "id": "a20cf5740e71ddae",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 40,
+        "wires": [
+            [
+                "a5b1bd2a98824da3"
+            ]
+        ]
+    },
+    {
+        "id": "dd5fe53ac71ed7d0",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e7933a6d8e98bb43",
+        "type": "http in",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "url": "/trafficData_1",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 520,
+        "wires": [
+            [
+                "4631b7f9ba2111ee"
+            ]
+        ]
+    },
+    {
+        "id": "4631b7f9ba2111ee",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "get app_inventor_1",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_1/DATA/la",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 520,
+        "wires": [
+            [
+                "7d4694861afe4c93"
+            ]
+        ]
+    },
+    {
+        "id": "7d4694861afe4c93",
+        "type": "xml",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "f3d3302e9ae074e1"
+            ]
+        ]
+    },
+    {
+        "id": "f3d3302e9ae074e1",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 2",
+        "func": "msg.payload = msg.payload[\"m2m:cin\"].con[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 520,
+        "wires": [
+            [
+                "1de19d7c667906fd"
+            ]
+        ]
+    },
+    {
+        "id": "1de19d7c667906fd",
+        "type": "xml",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 1050,
+        "y": 520,
+        "wires": [
+            [
+                "a9c6967c2822dedf"
+            ]
+        ]
+    },
+    {
+        "id": "a9c6967c2822dedf",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 3",
+        "func": "msg.payload = \"{traffic_accident:\"+msg.payload.obj.str[0].$.val+\",traffic_flow:\"+msg.payload.obj.str[1].$.val+\"}\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 520,
+        "wires": [
+            [
+                "487ac701160cd662",
+                "7a1a65a1bf666491"
+            ]
+        ]
+    },
+    {
+        "id": "487ac701160cd662",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7a1a65a1bf666491",
+        "type": "http response",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1390,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "765af5340132dc68",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "delete DATA",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_2/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 940,
+        "wires": [
+            [
+                "132f9057504155c2"
+            ]
+        ]
+    },
+    {
+        "id": "77d31faf0f5bd878",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 940,
+        "wires": [
+            [
+                "765af5340132dc68"
+            ]
+        ]
+    },
+    {
+        "id": "132f9057504155c2",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "254a323fea2daed8",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1000,
+        "wires": [
+            [
+                "46e2264994c3b5e4"
+            ]
+        ]
+    },
+    {
+        "id": "46e2264994c3b5e4",
+        "type": "Application",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "0fd8f5462ecc5b46",
+        "pointOfAccess": "",
+        "obixAnnounce": false,
+        "width": 0,
+        "options": [
+            {
+                "label": "traffic_flow",
+                "value": "2"
+            }
+        ],
+        "cntInstance": "",
+        "x": 450,
+        "y": 1000,
+        "wires": [
+            [
+                "748a58a44c44725f"
+            ]
+        ]
+    },
+    {
+        "id": "748a58a44c44725f",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "73ee8c66ae648280",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1060,
+        "wires": [
+            [
+                "048e0b7cd44bb535"
+            ]
+        ]
+    },
+    {
+        "id": "58429797fbf50af0",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "048e0b7cd44bb535",
+        "type": "Container",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "0fd8f5462ecc5b46",
+        "viewtype": "DATA",
+        "viewunid1": "",
+        "x": 440,
+        "y": 1060,
+        "wires": [
+            [
+                "58429797fbf50af0"
+            ]
+        ]
+    },
+    {
+        "id": "171fef286d2d6a13",
+        "type": "ContentInstance",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "0fd8f5462ecc5b46",
+        "container": "DATA",
+        "width": 0,
+        "options": [
+            {
+                "type": "str",
+                "label": "traffic_accident",
+                "value": "-1"
+            },
+            {
+                "type": "str",
+                "label": "traffic_flow",
+                "value": "-1"
+            }
+        ],
+        "x": 460,
+        "y": 1120,
+        "wires": [
+            [
+                "b1c5bdfa72689792"
+            ]
+        ]
+    },
+    {
+        "id": "b1c5bdfa72689792",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "3e81d18636539dcc",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1120,
+        "wires": [
+            [
+                "171fef286d2d6a13"
+            ]
+        ]
+    },
+    {
+        "id": "9d86556d273dad55",
+        "type": "http in",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "url": "/sensorData_2",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 1180,
+        "wires": [
+            [
+                "2ccaf7bd955c75de"
+            ]
+        ]
+    },
+    {
+        "id": "2ccaf7bd955c75de",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 4",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n\t<cnf>message</cnf>\\\n\t<con>\\\n\t  &lt;obj&gt;\\\n\t\t&lt;str name=&quot;traffic_accident&quot; val=&quot;'+ msg.payload.traffic_accident + '&quot;/&gt;\\\n\t\t&lt;str name=&quot;traffic_flow&quot; val=&quot;'+ msg.payload.traffic_flow + '&quot;/&gt;\\\n\t  &lt;/obj&gt;\\\n\t</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1180,
+        "wires": [
+            [
+                "56d7c225b0f5c5c0"
+            ]
+        ]
+    },
+    {
+        "id": "56d7c225b0f5c5c0",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_2/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 650,
+        "y": 1180,
+        "wires": [
+            [
+                "e1068e3e8f572a14",
+                "7a1eb478f905f336"
+            ]
+        ]
+    },
+    {
+        "id": "7a1eb478f905f336",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "e1068e3e8f572a14",
+        "type": "http response",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "133b2c79e6629570",
+        "type": "http in",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "url": "/trafficData_2",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 1300,
+        "wires": [
+            [
+                "60cba913797448b9"
+            ]
+        ]
+    },
+    {
+        "id": "60cba913797448b9",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "get app_inventor_2",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_2/DATA/la",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 1300,
+        "wires": [
+            [
+                "7b7a3b22d2f3274c"
+            ]
+        ]
+    },
+    {
+        "id": "7b7a3b22d2f3274c",
+        "type": "xml",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 710,
+        "y": 1300,
+        "wires": [
+            [
+                "c725f55738ddd8ca"
+            ]
+        ]
+    },
+    {
+        "id": "1179aec144ecab0c",
+        "type": "xml",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 1050,
+        "y": 1300,
+        "wires": [
+            [
+                "392ac0c380fd52b6"
+            ]
+        ]
+    },
+    {
+        "id": "c725f55738ddd8ca",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 5",
+        "func": "msg.payload = msg.payload[\"m2m:cin\"].con[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1300,
+        "wires": [
+            [
+                "1179aec144ecab0c"
+            ]
+        ]
+    },
+    {
+        "id": "392ac0c380fd52b6",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 6",
+        "func": "msg.payload = \"{traffic_accident:\" + msg.payload.obj.str[0].$.val + \",traffic_flow:\" + msg.payload.obj.str[1].$.val + \"}\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 1300,
+        "wires": [
+            [
+                "8462317163ea541a",
+                "a6d129aa201ef9c2"
+            ]
+        ]
+    },
+    {
+        "id": "8462317163ea541a",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "a6d129aa201ef9c2",
+        "type": "http response",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1390,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "c4bad779684f8c30",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "2d5f6afd5aeca77f"
+            ]
+        ]
+    },
+    {
+        "id": "2d5f6afd5aeca77f",
+        "type": "Container",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "name1": "2a8fa689d4502e17",
+        "viewtype": "autre",
+        "viewunid1": "TOTAL",
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "a36fbf1ce0e4b8e5"
+            ]
+        ]
+    },
+    {
+        "id": "a36fbf1ce0e4b8e5",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "69c899cccedd27ee",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "8bdaf70c57e6fc7b"
+            ]
+        ]
+    },
+    {
+        "id": "8bdaf70c57e6fc7b",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "delete TOTAL",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_1/TOTAL",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "5717040f7d1788df"
+            ]
+        ]
+    },
+    {
+        "id": "5717040f7d1788df",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9ef43c251ec86196",
+        "type": "http in",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "url": "/sensorData_total",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 600,
+        "wires": [
+            [
+                "ea8af8c6bc226a97"
+            ]
+        ]
+    },
+    {
+        "id": "ea8af8c6bc226a97",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 7",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n\t<cnf>message</cnf>\\\n\t<con>\\\n\t  &lt;obj&gt;\\\n\t\t&lt;str name=&quot;total_traffic_accident&quot; val=&quot;'+ msg.payload.total_traffic_accident + '&quot;/&gt;\\\n\t\t&lt;str name=&quot;total_traffic_flow&quot; val=&quot;'+ msg.payload.total_traffic_flow + '&quot;/&gt;\\\n\t  &lt;/obj&gt;\\\n\t</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 600,
+        "wires": [
+            [
+                "8e0692a8ba5b7cb8"
+            ]
+        ]
+    },
+    {
+        "id": "8e0692a8ba5b7cb8",
+        "type": "http request",
+        "z": "91aab71e913ebd26",
+        "name": "post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/app_inventor_1/TOTAL",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 600,
+        "wires": [
+            [
+                "7ad88aba26297741",
+                "8751ac84cf1e65c6"
+            ]
+        ]
+    },
+    {
+        "id": "7ad88aba26297741",
+        "type": "http response",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 830,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8751ac84cf1e65c6",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "25c0fb020c75a115",
+        "type": "inject",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "67d8d9e813f8e419"
+            ]
+        ]
+    },
+    {
+        "id": "04084427c715bce5",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "67d8d9e813f8e419",
+        "type": "Subscription",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "platform": "0c863148dc01f73c",
+        "sensor": "2a8fa689d4502e17",
+        "container": "TOTAL",
+        "path": "http://localhost:1880/monitor",
+        "x": 450,
+        "y": 720,
+        "wires": [
+            [
+                "04084427c715bce5"
+            ]
+        ]
+    },
+    {
+        "id": "202fb2d4c4f57f9e",
+        "type": "http in",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "url": "/monitor",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 780,
+        "wires": [
+            [
+                "3f012427caed5d1e"
+            ]
+        ]
+    },
+    {
+        "id": "3f012427caed5d1e",
+        "type": "xml",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 430,
+        "y": 780,
+        "wires": [
+            [
+                "45fe77e3d0e879c0"
+            ]
+        ]
+    },
+    {
+        "id": "45fe77e3d0e879c0",
+        "type": "switch",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "msg.payload[\"m2m:sgn\"].nev[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 780,
+        "wires": [
+            [
+                "64873e77516a4fe9"
+            ],
+            [
+                "de4eca9d93b54f7f"
+            ]
+        ]
+    },
+    {
+        "id": "64873e77516a4fe9",
+        "type": "http response",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "de4eca9d93b54f7f",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 8",
+        "func": "var data = msg.payload[\"m2m:sgn\"].nev[0].rep[0][\"m2m:cin\"][0].con[0];\nmsg.payload = data\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 840,
+        "wires": [
+            [
+                "4d49e06526d803a9"
+            ]
+        ]
+    },
+    {
+        "id": "be56f02a605ceffe",
+        "type": "function",
+        "z": "91aab71e913ebd26",
+        "name": "function 9",
+        "func": "var New = { traffic_accident: null, traffic_flow: null };\nNew.traffic_accident = msg.payload.obj.str[0].$.val;\nNew.traffic_flow = msg.payload.obj.str[1].$.val;\nmsg.payload = New;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 840,
+        "wires": [
+            [
+                "b2f97fdc31b56920"
+            ]
+        ]
+    },
+    {
+        "id": "b2f97fdc31b56920",
+        "type": "debug",
+        "z": "91aab71e913ebd26",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "4d49e06526d803a9",
+        "type": "xml",
+        "z": "91aab71e913ebd26",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 930,
+        "y": 840,
+        "wires": [
+            [
+                "be56f02a605ceffe"
+            ]
+        ]
+    }
+]
